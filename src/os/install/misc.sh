@@ -11,6 +11,9 @@ print_in_purple "\n   Miscellaneous\n\n"
 print_in_purple "\n   Git\n\n"
 brew_install "Git" "git"
 
+print_in_purple "\n   ShellCheck\n\n"
+brew_install "ShellCheck" "shellcheck"
+
 print_in_purple "\n   Yarn\n\n"
 if [ -d "$HOME/.nvm" ]; then
     brew_install "Yarn" "yarn"
