@@ -47,6 +47,7 @@ brew_install "Postgres.app" "postgres" "homebrew/cask" "cask"
 brew_install "Yarn" "yarn"
 brew_install "Python" "python"
 brew_install "PyEnv" "pyenv"
+brew_install "PyEnv VirtualEnv" "pyenv-virtualenv"
 
 print_in_purple "\n   Browsers\n\n"
 brew_install "Chrome" "google-chrome" "homebrew/cask" "cask"
