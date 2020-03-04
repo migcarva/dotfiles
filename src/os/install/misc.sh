@@ -15,9 +15,7 @@ print_in_purple "\n   ShellCheck\n\n"
 brew_install "ShellCheck" "shellcheck"
 
 print_in_purple "\n   Yarn\n\n"
-if [ -d "$HOME/.nvm" ]; then
-    brew_install "Yarn" "yarn"
-fi
+brew_install "Yarn" "yarn"
 
 print_in_purple "\n   Quicklook\n\n"
 brew_install "JSON" "quicklook-json" "homebrew/cask" "cask"
