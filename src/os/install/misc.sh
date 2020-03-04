@@ -55,7 +55,7 @@ brew_install "Discord" "discord"
 brew_install "Slack" "slack"
 
 print_in_purple "\n   Design Tools\n\n"
-brew_install "Sketch" "sketch" "caskroom/cask" "cask"
+brew_install "Sketch" "sketch" "homebrew/cask" "cask"
 
 print_in_purple "\n   Web Font Tools\n\n"
 brew_install "Web Font Tools: TTF/OTF → WOFF (Zopfli)" "sfnt2woff-zopfli" "bramstein/webfonttools"
