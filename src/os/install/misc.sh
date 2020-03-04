@@ -7,15 +7,25 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 print_in_purple "\n   Miscellaneous\n\n"
+brew_install "Bartender" "bartender" "caskroom/cask" "cask"
+brew_install "Spectacle" "spectacle" "homebrew/cask" "cask"
 
-print_in_purple "\n   Git\n\n"
+print_in_purple "\n   CLI Tools\n\n"
 brew_install "Git" "git"
-
-print_in_purple "\n   ShellCheck\n\n"
+brew_install "coreutils" "coreutils"
+brew_install "automake" "automake"
+brew_install "autoconf" "autoconf"
+brew_install "openssl" "openssl"
+brew_install "libyaml" "libyaml" # Must come after openssl
+brew_install "readline" "readline"
+brew_install "libxslt" "libxslt"
+brew_install "libtool" "libtool"
+brew_install "unixodbc" "unixodbc"
+brew_install "unzip" "unzip"
+brew_install "curl" "curl"
+brew_install "wx" "wxmac"
 brew_install "ShellCheck" "shellcheck"
-
-print_in_purple "\n   Yarn\n\n"
-brew_install "Yarn" "yarn"
+brew_install "Watchman" "watchman"
 
 print_in_purple "\n   Quicklook\n\n"
 brew_install "JSON" "quicklook-json" "homebrew/cask" "cask"
@@ -25,21 +35,32 @@ print_in_purple "\n   Tmux\n\n"
 brew_install "tmux" "tmux"
 brew_install "tmux (pasteboard)" "reattach-to-user-namespace"
 
-print_in_purple "\n   Spectacle\n\n"
-brew_install "Spectacle" "spectacle" "homebrew/cask" "cask"
-
 print_in_purple "\n   Utils\n\n"
 brew_install "Unarchiver" "the-unarchiver" "homebrew/cask" "cask"
 brew_install "FFmpeg" "ffmpeg"
 
-print_in_purple "\n   Editors\n\n"
+print_in_purple "\n   Development Tools\n\n"
 brew_install "Visual Studio Code" "visual-studio-code" "homebrew/cask" "cask"
+brew_install "Dash" "dash" "caskroom/cask" "cask"
+brew_install "iTerm 2" "iterm2" "caskroom/cask" "cask"
+brew_install "Postgres.app" "postgres" "caskroom/cask" "cask"
+brew_install "Yarn" "yarn"
 
 print_in_purple "\n   Browsers\n\n"
 brew_install "Chrome" "google-chrome" "homebrew/cask" "cask"
 brew_install "Firefox Developer" "firefox-developer-edition" "homebrew/cask-versions" "cask"
 
+print_in_purple "\n   Communication Tools\n\n"
+brew_install "Discord" "discord"
+brew_install "Slack" "slack"
+
+print_in_purple "\n   Design Tools\n\n"
+brew_install "Sketch" "sketch" "caskroom/cask" "cask"
+
 print_in_purple "\n   Web Font Tools\n\n"
 brew_install "Web Font Tools: TTF/OTF → WOFF (Zopfli)" "sfnt2woff-zopfli" "bramstein/webfonttools"
 brew_install "Web Font Tools: TTF/OTF → WOFF" "sfnt2woff" "bramstein/webfonttools"
 brew_install "Web Font Tools: WOFF2" "woff2" "bramstein/webfonttools"
+brew_install "Fira-Code" "font-fira-code" "homebrew/cask-fonts" "cask"
+brew_install "Hack" "font-hack" "homebrew/cask-fonts" "cask"
+brew_install "Hasklig" "font-hasklig" "homebrew/cask-fonts" "cask"

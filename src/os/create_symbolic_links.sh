@@ -25,6 +25,9 @@ create_symlinks() {
         "git/gitconfig"
         "git/gitignore"
 
+        "mackup/mackup.cfg"
+
+        "tmux/tmux"
         "tmux/tmux.conf"
 
         "vim/vim"
