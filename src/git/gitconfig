@@ -1,10 +1,11 @@
 [alias]
-    a   = commit --amend
+    a   = commit -a --amend
     br  = branch -a
     c   = commit
     cl = clone
     ca  = !git add -A && git commit             # Commit all changes.
     co  = checkout
+
     cp  = cherry-pick
     d   = diff -- . ':!*package-lock.json' ':!*yarn.lock'
     dc  = diff --cached -- . ':!*package-lock.json' ':!*yarn.lock'
@@ -17,9 +18,17 @@
     r   = rebase
     remotes = remote -v
     s   = status
+    save = !git add -A && git commit -m 'SAVEPOINT'
     st = status -sb
     tags = tag -l
     w   = instaweb --httpd=webrick              # Start web-based visualizer.
+    wip = commit -am "WIP"
+
+    # list branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
