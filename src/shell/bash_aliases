@@ -90,3 +90,13 @@ alias u="sudo softwareupdate --install --all \
             && brew cleanup \
             && npm install -g npm \
             && npm update -g"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Disable/Enable Dropshadow on screenshots
+
+  alias hide-drop-shadow="defaults write com.apple.screencapture disable-shadow -bool true \
+                             && killall SystemUIServer"
+
+  alias show-drop-shadow="defaults write com.apple.screencapture disable-shadow -bool false \
+                             && killall SystemUIServer"
