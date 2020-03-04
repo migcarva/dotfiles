@@ -100,16 +100,7 @@ get_script_path() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     if [ "$os_name" == "Darwin" ]; then
-        path="$path/macos"
-    elif [ "$os_name" == "Linux" ]; then
-        path="$path/linux"
-
-        if [ "$(uname -m)" == "x86_64" ]; then
-            path="${path}-64"
-        else
-            path="${path}-31"
-        fi
-    fi
+        path="$path"
 
     printf "%s" "$(dirname "${BASH_SOURCE[0]}")/$path"
 
