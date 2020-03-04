@@ -51,8 +51,8 @@ brew_install "Chrome" "google-chrome" "homebrew/cask" "cask"
 brew_install "Firefox Developer" "firefox-developer-edition" "homebrew/cask-versions" "cask"
 
 print_in_purple "\n   Communication Tools\n\n"
-brew_install "Discord" "discord"
-brew_install "Slack" "slack"
+brew_install "Discord" "discord" "homebrew/cask" "cask"
+brew_install "Slack" "slack" "homebrew/cask" "cask"
 
 print_in_purple "\n   Design Tools\n\n"
 brew_install "Sketch" "sketch" "homebrew/cask" "cask"
