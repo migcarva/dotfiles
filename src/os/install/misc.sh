@@ -45,6 +45,7 @@ brew_install "Dash" "dash" "homebrew/cask" "cask"
 brew_install "iTerm 2" "iterm2" "homebrew/cask" "cask"
 brew_install "Postgres.app" "postgres" "homebrew/cask" "cask"
 brew_install "Yarn" "yarn"
+brew_install "PyEnv" "pyenv"
 
 print_in_purple "\n   Browsers\n\n"
 brew_install "Chrome" "google-chrome" "homebrew/cask" "cask"
