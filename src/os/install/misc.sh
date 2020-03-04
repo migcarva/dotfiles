@@ -7,7 +7,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 print_in_purple "\n   Miscellaneous\n\n"
-brew_install "Bartender" "bartender" "caskroom/cask" "cask"
+brew_install "Bartender" "bartender" "homebrew/cask" "cask"
 brew_install "Spectacle" "spectacle" "homebrew/cask" "cask"
 
 print_in_purple "\n   CLI Tools\n\n"
