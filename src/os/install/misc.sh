@@ -9,6 +9,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 print_in_purple "\n   Miscellaneous\n\n"
 brew_install "Bartender" "bartender" "homebrew/cask" "cask"
 brew_install "Spectacle" "spectacle" "homebrew/cask" "cask"
+brew_install "Spotify" "spotify" "homebrew/cask" "cask"
+brew_install "1password" "1password" "homebrew/cask" "cask"
 
 print_in_purple "\n   CLI Tools\n\n"
 brew_install "Git" "git"
@@ -59,6 +61,7 @@ brew_install "Slack" "slack" "homebrew/cask" "cask"
 
 print_in_purple "\n   Design Tools\n\n"
 brew_install "Sketch" "sketch" "homebrew/cask" "cask"
+brew_install "Figma" "figma" "homebrew/cask" "cask"
 
 print_in_purple "\n   Web Font Tools\n\n"
 brew_install "Web Font Tools: TTF/OTF → WOFF (Zopfli)" "sfnt2woff-zopfli" "bramstein/webfonttools"
