@@ -1,8 +1,6 @@
 [Migcarva][repo]’s dotfiles
 ==========================
 
-[![Build Status][ci badge]][ci link]
-
 These are the base dotfiles that I start with when I set up a new
 environment. For more specific local needs I use the `*.local` files
 described in the [`Local Settings`](#local-settings) section.
@@ -10,30 +8,28 @@ described in the [`Local Settings`](#local-settings) section.
 Table of Contents
 -----------------
 
-* [🔧 Setup](#setup)
-* [💄 Customize](#customize)
-  * [🔀 Forks](#forks)
-  * [🌐 Local Settings](#local-settings)
-    * [🐚 `~/.bash.local`](#bashlocal)
-    * [🔁 `~/.gitconfig.local`](#gitconfiglocal)
-    * [⌨️  `~/.vimrc.local`](#vimrclocal)
-* [↕️  Update](#update)
-* [📸 Screenshots](#screenshots)
-  * [🔁 `Git`](#git)
-  * [⌨️  `tmux` & `Vim`](#tmux--vim)
-* [📄 License](#license)
+* [Setup](#setup)
+* [Customize](#customize)
+  * [Forks](#forks)
+  * [Local Settings](#local-settings)
+    * [`~/.bash.local`](#bashlocal)
+    * [`~/.gitconfig.local`](#gitconfiglocal)
+    * [`~/.vimrc.local`](#vimrclocal)
+* [Update](#update)
+* [Screenshots](#screenshots)
+  * [`Git`](#git)
+  * [`tmux` & `Vim`](#tmux--vim)
+* [License](#license)
 
 Setup
 -----
 
 To set up the `dotfiles` run the appropriate snippet in the terminal:
 
+`bash -c "$(curl -LsS https://raw.github.com/migcarva/dotfiles/master/src/os/setup.sh)"`
+
 (⚠️  **DO NOT** run the `setup` snippet if you do not fully understand
 [what it does][setup]. Seriously, **DON'T**!)
-
-| OS | Snippet |
-|:---|:---|
-| `macOS` | `bash -c "$(curl -LsS https://raw.github.com/migcarva/dotfiles/master/src/os/setup.sh)"` |
 
 That's it! ✨
 

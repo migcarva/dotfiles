@@ -11,7 +11,6 @@ create_directories() {
         "$HOME/Downloads/browsers"
         "$HOME/Pictures/screenshots"
         "$HOME/Code/home"
-        "$HOME/Code/unbabel"
     )
 
     for i in "${DIRECTORIES[@]}"; do
