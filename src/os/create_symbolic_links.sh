@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-    && . "../utils.sh"
+    && . "utils.sh"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -21,7 +21,7 @@ create_symlinks() {
         "shell/bash/curlrc"
         "shell/bash/inputrc"
 
-        "shell/zsh"
+        "shell/zsh/zsh"
         "shell/zsh/zlogin"
         "shell/zsh/zshenv"
         "shell/zsh/zshrc"
@@ -33,7 +33,6 @@ create_symlinks() {
 
         # "mackup/mackup.cfg" 
 
-        "tmux/tmux"
         "tmux/tmux.conf"
 
         "vim/vim"

@@ -226,15 +226,15 @@ main() {
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./setup/create_directories.sh
+    ./create_directories.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./setup/create_symbolic_links.sh "$@"
+    ./create_symbolic_links.sh "$@"
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-    ./setup/create_local_config_files.sh
+    ./create_local_config_files.sh
 
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -249,13 +249,13 @@ main() {
     if cmd_exists "git"; then
 
         if [ "$(git config --get remote.origin.url)" != "$DOTFILES_ORIGIN" ]; then
-            ./setup/initialize_git_repository.sh "$DOTFILES_ORIGIN"
+            ./initialize_git_repository.sh "$DOTFILES_ORIGIN"
         fi
 
         # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         if ! $skipQuestions; then
-            ./setup/update_content.sh
+            ./update_content.sh
         fi
 
     fi
@@ -263,7 +263,7 @@ main() {
     # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     if ! $skipQuestions; then
-        ./setup/restart.sh
+        ./restart.sh
     fi
 
 }
