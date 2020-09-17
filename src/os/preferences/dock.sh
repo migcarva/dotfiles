@@ -25,6 +25,12 @@ execute "defaults write com.apple.dock expose-group-by-app -bool false" \
 execute "defaults write com.apple.dock launchanim -bool false" \
     "Disable the opening of an application from the Dock animations."
 
+execute "defaults write com.apple.dashboard mcx-disabled -bool true" \
+    "Disable Dashboard"
+
+execute "defaults write com.apple.dock dashboard-in-overlay -bool true" \
+    "Don’t show Dashboard as a Space"
+
 execute "defaults write com.apple.dock mineffect -string 'scale'" \
     "Change minimize/maximize window effect"
 
@@ -38,8 +44,8 @@ execute "defaults write com.apple.dock persistent-apps -array && \
          defaults write com.apple.dock persistent-others -array " \
     "Wipe all app icons"
 
-execute "defaults write com.apple.dock show-process-indicators -bool true" \
-    "Show indicator lights for open applications"
+execute "defaults write com.apple.dock show-process-indicators -bool false" \
+    "Hide indicator lights for open applications"
 
 execute "defaults write com.apple.dock show-recents -bool false" \
     "Do not show recent applications in Dock"

@@ -43,7 +43,7 @@ execute "defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool t
 execute "defaults write com.apple.finder ShowRecentTags -bool false" \
     "Do not show recent tags"
 
-execute "defaults write -g AppleShowAllExtensions -bool true" \
+execute "defaults write NSGlobalDomain AppleShowAllExtensions -bool true" \
     "Show all filename extensions"
 
 execute "/usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:iconSize 48' ~/Library/Preferences/com.apple.finder.plist && \
@@ -69,6 +69,10 @@ execute "/usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:s
 execute "/usr/libexec/PlistBuddy -c 'Set :DesktopViewSettings:IconViewSettings:arrangeBy none' ~/Library/Preferences/com.apple.finder.plist && \
          /usr/libexec/PlistBuddy -c 'Set :StandardViewSettings:IconViewSettings:arrangeBy none' ~/Library/Preferences/com.apple.finder.plist" \
     "Set sort method"
+
+execute "defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true && \
+         defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true" \
+    "Avoid creating .DS_Store files on network or USB volumes"
 
 killall "Finder" &> /dev/null
 
