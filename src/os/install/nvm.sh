@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd "$(dirname "${BASH_SOURCE[0]}")" \
-    && . "../install_utils.sh"
+    && . "./install_utils.sh"
 
 declare -r LOCAL_SHELL_CONFIG_FILE="$HOME/.bash.local"
 declare -r NVM_DIRECTORY="$HOME/.nvm"
