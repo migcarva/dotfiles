@@ -50,12 +50,12 @@ create_gitconfig_local() {
     # gpgsign = true
 
 [github]
-  user = migcarva
+    user = migcarva
 
 [user]
+    name = Miguel Carvalho
+    email = migcarva@users.noreply.github.com
 
-    name =
-    email =
     # signingkey =" \
         >> "$FILE_PATH"
     fi
