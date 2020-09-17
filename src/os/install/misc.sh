@@ -39,6 +39,7 @@ brew_install "tmux (pasteboard)" "reattach-to-user-namespace"
 print_in_purple "\n   Utils\n\n"
 brew_install "Unarchiver" "the-unarchiver" "homebrew/cask" "cask"
 brew_install "FFmpeg" "ffmpeg"
+brew_install "Kap" "kap"
 
 print_in_purple "\n   Development Tools\n\n"
 brew_install "Visual Studio Code" "visual-studio-code" "homebrew/cask" "cask"
