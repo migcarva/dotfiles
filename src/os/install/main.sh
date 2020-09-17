@@ -11,6 +11,7 @@ print_in_purple "\n • Installs\n\n"
 ./xcode.sh
 ./homebrew.sh
 ./bash.sh
+./zsh.sh
 ./nvm.sh
 ./npm.sh
 ./gpg.sh

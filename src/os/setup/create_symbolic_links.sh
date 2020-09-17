@@ -21,6 +21,7 @@ create_symlinks() {
         "shell/bash/curlrc"
         "shell/bash/inputrc"
 
+        "shell/zsh"
         "shell/zsh/zlogin"
         "shell/zsh/zshenv"
         "shell/zsh/zshrc"
@@ -28,7 +29,7 @@ create_symlinks() {
         "git/gitattributes"
         "git/gitconfig"
         "git/gitignore"
-        "git/extras"
+        "git/git-extras"
 
         # "mackup/mackup.cfg" 
 

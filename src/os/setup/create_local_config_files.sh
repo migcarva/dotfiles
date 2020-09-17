@@ -49,6 +49,8 @@ create_gitconfig_local() {
 
     # gpgsign = true
 
+[github]
+  user = migcarva
 
 [user]
 

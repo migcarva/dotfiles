@@ -4,10 +4,10 @@ curr="$pm/dotfiles"
 
 # Load main files.
 # echo "Load start\t" $(gdate "+%s-%N")
-source "$curr/terminal/startup.sh"
+source "$HOME/.zsh/startup.sh"
 # echo "$curr/terminal/startup.sh"
-source "$curr/terminal/completion.sh"
-source "$curr/terminal/highlight.sh"
+source "$HOME/.zsh/completion.sh"
+source "$HOME/.zsh/highlight.sh"
 # echo "Load end\t" $(gdate "+%s-%N")
 
 autoload -U colors && colors
